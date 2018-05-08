@@ -1,6 +1,15 @@
-body{
-    background-image: url('./king.png');
-    background-repeat: repeat;
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+body, .container{
     height: 100%;
     width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.king{
+    width: 300px;
+    height: 300px;
+    animation:spin 4s linear infinite;
 }
